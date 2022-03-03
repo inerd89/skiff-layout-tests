@@ -1,0 +1,25 @@
+.image-text-grid h3 {
+  font-size: var(--step-2);
+  font-weight: 400;
+}
+
+.image-text-grid .module-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.image-text-grid .module-content > * {
+  font-size: var(--step-2-1);
+  flex: 1 1 15ch;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.image-text-grid .item p {
+  font-size: var(--step-0);
+}
+
+.image-text-grid .item .image {
+  aspect-ratio: 4 / 3;
+  background-color: #aaa;
+}

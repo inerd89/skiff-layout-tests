@@ -1,0 +1,30 @@
+/* TODO: Max number of columns should be 3 */
+
+.icon-text-grid .module-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.icon-text-grid .module-content > * {
+  font-size: var(--step-1);
+  flex: 1 1 12ch;
+  /* background-color: rgba(255, 0, 0, 0.1); */
+}
+
+.icon-text-grid .icon {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.icon-text-grid-item h3 {
+  font-size: var(--step-1);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.icon-text-grid-item p {
+  font-size: var(--step--1);
+}

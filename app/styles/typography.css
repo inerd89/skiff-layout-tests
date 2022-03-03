@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "StabilGrotesk";
+  src: url("/fonts/StabilGrotesk/StabilGrotesk-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "StabilGrotesk";
+  src: url("/fonts/StabilGrotesk/StabilGrotesk-RegularItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* @link https://utopia.fyi/type/calculator?c=375,19,1.2,1920,28,1.25,5,2,1024&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+
+:root {
+  --step--2: clamp(0.82rem, calc(0.75rem + 0.31vw), 1.12rem);
+  --step--1: clamp(0.99rem, calc(0.89rem + 0.43vw), 1.40rem);
+  --step-0: clamp(1.19rem, calc(1.05rem + 0.58vw), 1.75rem);
+  --step-1: clamp(1.43rem, calc(1.24rem + 0.79vw), 2.19rem);
+  --step-2: clamp(1.71rem, calc(1.46rem + 1.06vw), 2.73rem);
+  --step-3: clamp(2.05rem, calc(1.72rem + 1.41vw), 3.42rem);
+  --step-4: clamp(2.46rem, calc(2.02rem + 1.87vw), 4.27rem);
+  --step-5: clamp(2.96rem, calc(2.38rem + 2.47vw), 5.34rem);
+  --step-6: clamp(6.68rem, calc(2.79rem + 3.24vw), 3.55rem);
+  --step-7: clamp(8.34rem, calc(3.26rem + 4.23vw), 4.26rem);
+  --step-8: clamp(10.43rem, calc(3.81rem + 5.51vw), 5.11rem);
+
+  --step-2-1: clamp(1.43rem, calc(1.11rem + 1.36vw), 2.73rem);
+  --gap: clamp(1.00rem, calc(0.27rem + 3.11vw), 4.00rem);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: "StabilGrotesk", sans-serif;
+  font-size: var(--step-0);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+/*
+TODO: Type styles incomplete
+      - add line-height specs
+      - add letter-spacing specs
+      - add additional needed cross-steps (ie --step-2-1)
+ */
+
+/*
+.heading-s-2 {}
+.heading-s-1 {}
+.heading-s0 {}
+.heading-s1 {}
+.heading-s2 {}
+.heading-s3 {}
+.heading-s4 {}
+.heading-s5 {}
+.heading-s6 {}
+.heading-s7 {}
+.heading-s8 {}
+
+.body-s0 {}
+
+.prose-s0 {}
+*/
