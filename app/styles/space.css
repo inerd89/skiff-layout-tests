@@ -1,0 +1,109 @@
+/******************
+ Fluid Setup
+ ******************/
+/* :root {
+  --fluid-min-width: 375;
+  --fluid-max-width: 1920;
+
+  --fluid-screen: 100vw;
+  --fluid-bp: calc(
+    (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+      (var(--fluid-max-width) - var(--fluid-min-width))
+  );
+}
+
+@media screen and (min-width: 1920px) {
+  :root {
+    --fluid-screen: calc(var(--fluid-max-width) * 1px);
+  }
+} */
+
+/************************************
+ Fluid Spacing
+ * non-clamp() calculations
+ * are commented out, using
+ * the clamp() versions
+ ************************************/
+:root {
+  /* --fc-3xs-min: (var(--fc-s-min) * 0.25);
+  --fc-3xs-max: (var(--fc-s-max) * 0.25);
+
+  --fc-2xs-min: (var(--fc-s-min) * 0.5);
+  --fc-2xs-max: (var(--fc-s-max) * 0.5);
+
+  --fc-xs-min: (var(--fc-s-min) * 0.75);
+  --fc-xs-max: (var(--fc-s-max) * 0.75);
+
+  --fc-s-min: (var(--f-0-min, 16));
+  --fc-s-max: (var(--f-0-max, 24));
+
+  --fc-m-min: (var(--fc-s-min) * 1.5);
+  --fc-m-max: (var(--fc-s-max) * 1.5);
+
+  --fc-l-min: (var(--fc-s-min) * 2);
+  --fc-l-max: (var(--fc-s-max) * 2);
+
+  --fc-xl-min: (var(--fc-s-min) * 2.5);
+  --fc-xl-max: (var(--fc-s-max) * 2.5);
+
+  --fc-2xl-min: (var(--fc-s-min) * 3);
+  --fc-2xl-max: (var(--fc-s-max) * 3);
+
+  --fc-3xl-min: (var(--fc-s-min) * 4);
+  --fc-3xl-max: (var(--fc-s-max) * 4);
+
+  --fc-4xl-min: (var(--fc-s-min) * 6);
+  --fc-4xl-max: (var(--fc-s-max) * 6); */
+
+  /* T-shirt sizes */
+  /* --space-3xs: calc(((var(--fc-3xs-min) / 16) * 1rem) + (var(--fc-3xs-max) - var(--fc-3xs-min)) * var(--fluid-bp));
+  --space-2xs: calc(((var(--fc-2xs-min) / 16) * 1rem) + (var(--fc-2xs-max) - var(--fc-2xs-min)) * var(--fluid-bp));
+  --space-xs: calc(((var(--fc-xs-min) / 16) * 1rem) + (var(--fc-xs-max) - var(--fc-xs-min)) * var(--fluid-bp));
+  --space-s: calc(((var(--fc-s-min) / 16) * 1rem) + (var(--fc-s-max) - var(--fc-s-min)) * var(--fluid-bp));
+  --space-m: calc(((var(--fc-m-min) / 16) * 1rem) + (var(--fc-m-max) - var(--fc-m-min)) * var(--fluid-bp));
+  --space-l: calc(((var(--fc-l-min) / 16) * 1rem) + (var(--fc-l-max) - var(--fc-l-min)) * var(--fluid-bp));
+  --space-xl: calc(((var(--fc-xl-min) / 16) * 1rem) + (var(--fc-xl-max) - var(--fc-xl-min)) * var(--fluid-bp));
+  --space-2xl: calc(((var(--fc-2xl-min) / 16) * 1rem) + (var(--fc-2xl-max) - var(--fc-2xl-min)) * var(--fluid-bp));
+  --space-3xl: calc(((var(--fc-3xl-min) / 16) * 1rem) + (var(--fc-3xl-max) - var(--fc-3xl-min)) * var(--fluid-bp));
+  --space-4xl: calc(((var(--fc-4xl-min) / 16) * 1rem) + (var(--fc-4xl-max) - var(--fc-4xl-min)) * var(--fluid-bp)); */
+  --space-3xs: clamp(0.25rem, calc(0.22rem + 0.13vw), 0.38rem);
+  --space-2xs: clamp(0.50rem, calc(0.44rem + 0.26vw), 0.75rem);
+  --space-xs: clamp(0.75rem, calc(0.66rem + 0.39vw), 1.13rem);
+  --space-s: clamp(1.00rem, calc(0.88rem + 0.52vw), 1.50rem);
+  --space-m: clamp(1.50rem, calc(1.32rem + 0.78vw), 2.25rem);
+  --space-l: clamp(2.00rem, calc(1.76rem + 1.04vw), 3.00rem);
+  --space-xl: clamp(2.00rem, calc(1.76rem + 1.04vw), 3.00rem);
+  --space-2xl: clamp(3.00rem, calc(2.64rem + 1.55vw), 4.50rem);
+  --space-3xl: clamp(4.00rem, calc(3.51rem + 2.07vw), 6.00rem);
+  --space-4xl: clamp(6.00rem, calc(5.27rem + 3.11vw), 9.00rem);
+
+  /* One-up pairs */
+  /* --space-3xs-2xs: calc(((var(--fc-3xs-min) / 16) * 1rem) + (var(--fc-2xs-max) - var(--fc-3xs-min)) * var(--fluid-bp));
+  --space-2xs-xs: calc(((var(--fc-2xs-min) / 16) * 1rem) + (var(--fc-xs-max) - var(--fc-2xs-min)) * var(--fluid-bp));
+  --space-xs-s: calc(((var(--fc-xs-min) / 16) * 1rem) + (var(--fc-s-max) - var(--fc-xs-min)) * var(--fluid-bp));
+  --space-s-m: calc(((var(--fc-s-min) / 16) * 1rem) + (var(--fc-m-max) - var(--fc-s-min)) * var(--fluid-bp));
+  --space-m-l: calc(((var(--fc-m-min) / 16) * 1rem) + (var(--fc-l-max) - var(--fc-m-min)) * var(--fluid-bp));
+  --space-l-xl: calc(((var(--fc-l-min) / 16) * 1rem) + (var(--fc-xl-max) - var(--fc-l-min)) * var(--fluid-bp));
+  --space-xl-2xl: calc(((var(--fc-xl-min) / 16) * 1rem) + (var(--fc-2xl-max) - var(--fc-xl-min)) * var(--fluid-bp));
+  --space-2xl-3xl: calc(((var(--fc-2xl-min) / 16) * 1rem) + (var(--fc-3xl-max) - var(--fc-2xl-min)) * var(--fluid-bp));
+  --space-3xl-4xl: calc(((var(--fc-3xl-min) / 16) * 1rem) + (var(--fc-4xl-max) - var(--fc-3xl-min)) * var(--fluid-bp)); */
+  --space-3xs-2xs: clamp(0.25rem, calc(0.13rem + 0.52vw), 0.75rem);
+  --space-2xs-xs: clamp(0.50rem, calc(0.35rem + 0.65vw), 1.13rem);
+  --space-xs-s: clamp(0.75rem, calc(0.57rem + 0.78vw), 1.50rem);
+  --space-s-m: clamp(1.00rem, calc(0.70rem + 1.29vw), 2.25rem);
+  --space-m-l: clamp(1.50rem, calc(1.14rem + 1.55vw), 3.00rem);
+  --space-l-xl: clamp(2.00rem, calc(1.76rem + 1.04vw), 3.00rem);
+  --space-xl-2xl: clamp(2.00rem, calc(1.39rem + 2.59vw), 4.50rem);
+  --space-2xl-3xl: clamp(3.00rem, calc(2.27rem + 3.11vw), 6.00rem);
+  --space-3xl-4xl: clamp(4.00rem, calc(2.79rem + 5.18vw), 9.00rem);
+
+  /* Custom pairs */
+  /* --space-s-xl: calc(((var(--fc-s-min) / 16) * 1rem) + (var(--fc-xl-max) - var(--fc-s-min)) * var(--fluid-bp)); */
+  --space-s-xl: clamp(1.00rem, calc(0.51rem + 2.07vw), 3.00rem);
+
+  /************************************
+   Aliases
+   ************************************/
+  --gap: var(--space-s-xl);
+  --page-margin: var(--space-s-m);
+};

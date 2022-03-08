@@ -20,10 +20,10 @@ export function links() {
 
 function IconTextGridItem() {
   return (
-    <div className="icon-text-grid-item stack-16">
+    <div className="icon-text-grid-item stack-2xs">
       <div class="icon"></div>
-      <h3>Module headline lorem ipsum</h3>
-      <p>Body text blurb here lorem ipsum</p>
+      <h3 className="heading-s1">Module headline lorem ipsum</h3>
+      <p className="body-s-1">Body text blurb here lorem ipsum</p>
     </div>
   )
 }

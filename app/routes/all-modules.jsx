@@ -18,7 +18,6 @@ import TextStyles from "~/styles/text.css";
 import ImageTextStyles from "~/styles/image-text-grid.css";
 import IconTextStyles from "~/styles/icon-text-grid.css";
 
-
 export function links() {
   return [
     {
@@ -42,7 +41,7 @@ export function links() {
 
 export default function AllModules() {
   return (
-    <div className="stack-240">
+    <div className="stack-7xl">
       <Image />
       <Text />
       <ImageTextGrid />

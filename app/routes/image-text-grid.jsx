@@ -21,10 +21,10 @@ export function links() {
 
 function ImageTextGridItem() {
   return (
-    <div className="item stack-24">
-      <div className="stack-16">
-        <h3>Module headline lorem ipsum</h3>
-        <p>Body text blurb here lorem ipsum</p>
+    <div className="item stack-m">
+      <div className="stack-xs">
+        <h3 className="heading-s2">Module headline lorem ipsum</h3>
+        <p className="heading-s0">Body text blurb here lorem ipsum</p>
       </div>
       <div class="image"></div>
     </div>
@@ -39,12 +39,12 @@ export default function ImageTextGrid() {
 
       <div className="module-content">
 
-        <div className="stack-48">
+        <div className="stack-l">
           <ImageTextGridItem />
           <ImageTextGridItem />
         </div>
 
-        <div className="stack-48">
+        <div className="stack-l">
           <ImageTextGridItem />
           <ImageTextGridItem />
         </div>

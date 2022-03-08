@@ -13,6 +13,7 @@ export function meta() {
 
 import styles from "~/styles/global.css";
 import typography from "~/styles/typography.css";
+import space from "~/styles/space.css";
 
 export function links() {
   return [
@@ -23,6 +24,10 @@ export function links() {
     {
       rel: "stylesheet",
       href: typography
+    },
+    {
+      rel: "stylesheet",
+      href: space
     }
   ];
 }

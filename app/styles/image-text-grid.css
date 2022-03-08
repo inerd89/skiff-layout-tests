@@ -1,22 +1,11 @@
-.image-text-grid h3 {
-  font-size: var(--step-2);
-  font-weight: 400;
-}
-
 .image-text-grid .module-content {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--gap);
+  gap: var(--space-s-xl);
 }
 
 .image-text-grid .module-content > * {
-  font-size: var(--step-2-1);
-  flex: 1 1 15ch;
-  background-color: rgba(255, 0, 0, 0.1);
-}
-
-.image-text-grid .item p {
-  font-size: var(--step-0);
+  flex: 1 1 21ch;
 }
 
 .image-text-grid .item .image {
